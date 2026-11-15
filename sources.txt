@@ -1,16 +1,58 @@
-https://www.nasa.gov/smallsat-institute/sst-soa/
-https://www.nasa.gov/wp-content/uploads/2025/02/soa-2024.pdf
-https://www.nasa.gov/wp-content/uploads/2015/07/lsp_brochure_508.pdf?emrc=5b15ca
-https://www.nasa.gov/wp-content/uploads/2018/03/lsp-jan-14.pdf?emrc=74946c
-https://elvperf.ksc.nasa.gov/pages/Vehicles.aspx
-https://ntrs.nasa.gov/api/citations/20110023685/downloads/20110023685.pdf
-https://ntrs.nasa.gov/api/citations/20000055622/downloads/20000055622.pdf
-https://ntrs.nasa.gov/api/citations/20140017062/downloads/20140017062.pdf
+NASA Data & Resources (Mission Architect)
+Formatted for NASA Space Apps Challenge Submission ("Link Text" / "Link Url")
 
+=== Technical Data, Launch Vehicles & Mission Concept Studies ===
 
-model sources:
-https://github.com/nasa/nasa-3d-resources
-https://www.jpl.nasa.gov/news/nasa-3-d-app-gives-public-ability-to-experience-robotic-space-travel/
-https://science.nasa.gov/3d-resources/satellite-kit/
-https://www.nasa.gov/3d-resources/
-https://science.nasa.gov/eyes/
+1.
+Link Text: NASA Small Spacecraft Technology State-of-the-Art (SST-SOA)
+Link Url: https://www.nasa.gov/smallsat-institute/sst-soa/
+
+2.
+Link Text: NASA State-of-the-Art of Small Spacecraft Technology Report (2024 PDF)
+Link Url: https://www.nasa.gov/wp-content/uploads/2025/02/soa-2024.pdf
+
+3.
+Link Text: NASA Launch Services Program Overview Brochure (Earth's Bridge to Space)
+Link Url: https://www.nasa.gov/wp-content/uploads/2015/07/lsp_brochure_508.pdf?emrc=5b15ca
+
+4.
+Link Text: NASA Launch Services Program (LSP) Reference Document (January 2014)
+Link Url: https://www.nasa.gov/wp-content/uploads/2018/03/lsp-jan-14.pdf?emrc=74946c
+
+5.
+Link Text: NASA Launch Services Program (LSP) Expendable Launch Vehicle Performance Website
+Link Url: https://elvperf.ksc.nasa.gov/pages/Vehicles.aspx
+
+6.
+Link Text: NASA NTRS — Advanced X-Ray Timing Array (AXTAR) Conceptual Spacecraft Design Study (20110023685)
+Link Url: https://ntrs.nasa.gov/api/citations/20110023685/downloads/20110023685.pdf
+
+7.
+Link Text: NASA NTRS — LISA Mission Concept Study: Laser Interferometer Space Antenna (20000055622)
+Link Url: https://ntrs.nasa.gov/api/citations/20000055622/downloads/20000055622.pdf
+
+8.
+Link Text: NASA NTRS — Solar Electric Propulsion Concept Designs for SEP Technology Demonstration Mission (20140017062)
+Link Url: https://ntrs.nasa.gov/api/citations/20140017062/downloads/20140017062.pdf
+
+=== 3D Models & Space Visualization Resources ===
+
+9.
+Link Text: NASA 3D Resources GitHub Repository
+Link Url: https://github.com/nasa/nasa-3d-resources
+
+10.
+Link Text: NASA JPL — Spacecraft 3D App ("NASA 3-D App Gives Public Ability to Experience Robotic Space Travel")
+Link Url: https://www.jpl.nasa.gov/news/nasa-3-d-app-gives-public-ability-to-experience-robotic-space-travel/
+
+11.
+Link Text: NASA Science 3D Resources — Satellite Kit
+Link Url: https://science.nasa.gov/3d-resources/satellite-kit/
+
+12.
+Link Text: NASA 3D Resources Portal
+Link Url: https://www.nasa.gov/3d-resources/
+
+13.
+Link Text: NASA's Eyes Interactive 3D Space & Earth Visualization Suite
+Link Url: https://science.nasa.gov/eyes/
