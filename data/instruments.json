@@ -1,0 +1,160 @@
+[
+  {
+    "id": "inst-multispectral",
+    "name": "Multispectral Earth Imager",
+    "category": "Optical Remote Sensing",
+    "description": "High-resolution 8-band optical and near-infrared sensor for monitoring vegetation health, deforestation, water resources, and urban growth.",
+    "massKg": 35,
+    "powerWatts": 45,
+    "dataRateMbps": 25,
+    "costM": 14.5,
+    "minPointingAccuracyDeg": 0.05,
+    "scienceValue": 85,
+    "targetDomains": ["earth-obs", "agriculture", "climate"],
+    "visualModel": {
+      "type": "camera_barrel",
+      "diameter": 0.35,
+      "length": 0.65,
+      "color": "#1e293b",
+      "lensColor": "#38bdf8"
+    }
+  },
+  {
+    "id": "inst-hyperspectral",
+    "name": "Hyperspectral Environmental Scanner",
+    "category": "Optical Remote Sensing",
+    "description": "250-band continuous imaging spectrometer for mineral mapping, algal bloom detection, and greenhouse gas plume pinpointing.",
+    "massKg": 55,
+    "powerWatts": 80,
+    "dataRateMbps": 80,
+    "costM": 28.0,
+    "minPointingAccuracyDeg": 0.02,
+    "scienceValue": 95,
+    "targetDomains": ["earth-obs", "atmosphere", "water-quality"],
+    "visualModel": {
+      "type": "dual_barrel",
+      "diameter": 0.45,
+      "length": 0.75,
+      "color": "#334155",
+      "lensColor": "#818cf8"
+    }
+  },
+  {
+    "id": "inst-sar-radar",
+    "name": "L-Band Synthetic Aperture Radar (SAR)",
+    "category": "Radar",
+    "description": "Active microwave radar capable of cloud-penetrating and day/night ground deformation, ice sheet tracking, and soil moisture profiling.",
+    "massKg": 160,
+    "powerWatts": 450,
+    "dataRateMbps": 120,
+    "costM": 48.0,
+    "minPointingAccuracyDeg": 0.1,
+    "scienceValue": 98,
+    "targetDomains": ["earth-obs", "geology", "ice-monitoring"],
+    "visualModel": {
+      "type": "radar_panel",
+      "width": 2.2,
+      "height": 0.9,
+      "depth": 0.15,
+      "color": "#e2e8f0"
+    }
+  },
+  {
+    "id": "inst-space-telescope",
+    "name": "Deep Space Optical Telescope (0.8m)",
+    "category": "Astrophysics",
+    "description": "Ritchey-Chrétien optical/UV assembly with cryogenic sensors for exoplanet transit spectroscopy and deep sky cosmological surveys.",
+    "massKg": 140,
+    "powerWatts": 95,
+    "dataRateMbps": 15,
+    "costM": 65.0,
+    "minPointingAccuracyDeg": 0.002,
+    "scienceValue": 100,
+    "targetDomains": ["astronomy", "exoplanets", "cosmology"],
+    "visualModel": {
+      "type": "telescope_cylinder",
+      "diameter": 0.95,
+      "length": 1.8,
+      "color": "#0f172a",
+      "sunshield": true
+    }
+  },
+  {
+    "id": "inst-lunar-lidar",
+    "name": "Pulsed Lunar Laser Altimeter (LIDAR)",
+    "category": "Planetary Geodesy",
+    "description": "Nanosecond laser ranging system for sub-meter 3D topographic mapping of lunar impact craters and permanently shadowed polar regions.",
+    "massKg": 28,
+    "powerWatts": 55,
+    "dataRateMbps": 10,
+    "costM": 18.5,
+    "minPointingAccuracyDeg": 0.03,
+    "scienceValue": 90,
+    "targetDomains": ["lunar-science", "topography", "landing-site"],
+    "visualModel": {
+      "type": "lidar_turret",
+      "diameter": 0.3,
+      "length": 0.45,
+      "color": "#475569",
+      "laserColor": "#22c55e"
+    }
+  },
+  {
+    "id": "inst-neutron-spectrometer",
+    "name": "Thermal & Epithermal Neutron Spectrometer",
+    "category": "Nuclear Planetology",
+    "description": "Detects hydrogen signatures to map water-ice reserves beneath the lunar regolith and solar wind implantation.",
+    "massKg": 12,
+    "powerWatts": 18,
+    "dataRateMbps": 2,
+    "costM": 9.2,
+    "minPointingAccuracyDeg": 1.0,
+    "scienceValue": 88,
+    "targetDomains": ["lunar-science", "water-ice", "resources"],
+    "visualModel": {
+      "type": "sensor_box",
+      "width": 0.25,
+      "height": 0.25,
+      "depth": 0.25,
+      "color": "#cbd5e1"
+    }
+  },
+  {
+    "id": "inst-magnetometer-boom",
+    "name": "Fluxgate Magnetometer on 3m Deployable Boom",
+    "category": "Space Physics",
+    "description": "Ultra-sensitive triaxial magnetic field measurement sensor extended away from spacecraft electromagnetic interference.",
+    "massKg": 6.5,
+    "powerWatts": 7,
+    "dataRateMbps": 1.5,
+    "costM": 5.5,
+    "minPointingAccuracyDeg": 2.0,
+    "scienceValue": 75,
+    "targetDomains": ["space-weather", "heliophysics", "magnetosphere"],
+    "visualModel": {
+      "type": "boom_tip",
+      "boomLength": 2.8,
+      "sensorSize": 0.12,
+      "color": "#94a3b8"
+    }
+  },
+  {
+    "id": "inst-radiometer",
+    "name": "Passive Microwave Atmospheric Sounder",
+    "category": "Atmospheric Science",
+    "description": "Multi-channel radiometer profiling vertical atmospheric temperature and water vapor columns through clouds and precipitation.",
+    "massKg": 42,
+    "powerWatts": 60,
+    "dataRateMbps": 12,
+    "costM": 21.0,
+    "minPointingAccuracyDeg": 0.1,
+    "scienceValue": 84,
+    "targetDomains": ["earth-obs", "weather", "atmosphere"],
+    "visualModel": {
+      "type": "dish_feed",
+      "diameter": 0.6,
+      "depth": 0.35,
+      "color": "#f1f5f9"
+    }
+  }
+]

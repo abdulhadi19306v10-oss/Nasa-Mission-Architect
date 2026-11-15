@@ -1,0 +1,16 @@
+https://www.nasa.gov/smallsat-institute/sst-soa/
+https://www.nasa.gov/wp-content/uploads/2025/02/soa-2024.pdf
+https://www.nasa.gov/wp-content/uploads/2015/07/lsp_brochure_508.pdf?emrc=5b15ca
+https://www.nasa.gov/wp-content/uploads/2018/03/lsp-jan-14.pdf?emrc=74946c
+https://elvperf.ksc.nasa.gov/pages/Vehicles.aspx
+https://ntrs.nasa.gov/api/citations/20110023685/downloads/20110023685.pdf
+https://ntrs.nasa.gov/api/citations/20000055622/downloads/20000055622.pdf
+https://ntrs.nasa.gov/api/citations/20140017062/downloads/20140017062.pdf
+
+
+model sources:
+https://github.com/nasa/nasa-3d-resources
+https://www.jpl.nasa.gov/news/nasa-3-d-app-gives-public-ability-to-experience-robotic-space-travel/
+https://science.nasa.gov/3d-resources/satellite-kit/
+https://www.nasa.gov/3d-resources/
+https://science.nasa.gov/eyes/

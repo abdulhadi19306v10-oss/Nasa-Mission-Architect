@@ -1,0 +1,107 @@
+[
+  {
+    "id": "lv-electron",
+    "name": "Rocket Lab Electron",
+    "provider": "Rocket Lab",
+    "class": "Small Launch Vehicle",
+    "costM": 7.5,
+    "maxPayloadLeoKg": 300,
+    "maxPayloadSsoKg": 200,
+    "maxPayloadGtoKg": 0,
+    "maxPayloadTliKg": 35,
+    "fairingDiameterM": 1.2,
+    "fairingHeightM": 2.5,
+    "reliabilityRating": 0.94,
+    "description": "Carbon-composite dedicated small rocket powered by 3D-printed electric-pump Rutherford engines. Ideal for dedicated SmallSat launches into custom sun-synchronous orbits.",
+    "visualModel": {
+      "stages": 2,
+      "color": "#18181b",
+      "accentColor": "#ffffff",
+      "heightRatio": 1.0
+    }
+  },
+  {
+    "id": "lv-falcon9-rideshare",
+    "name": "SpaceX Falcon 9 (Transporter Rideshare)",
+    "provider": "SpaceX",
+    "class": "Medium Rideshare",
+    "costM": 2.5,
+    "maxPayloadLeoKg": 450,
+    "maxPayloadSsoKg": 450,
+    "maxPayloadGtoKg": 0,
+    "maxPayloadTliKg": 0,
+    "fairingDiameterM": 0.8,
+    "fairingHeightM": 1.2,
+    "reliabilityRating": 0.99,
+    "description": "Shared slot on a Falcon 9 Transporter mission to SSO. Extremely cost-effective for SmallSats, but constrained by fixed orbital insertion and strict mass/volume limits.",
+    "visualModel": {
+      "stages": 2,
+      "color": "#f8fafc",
+      "accentColor": "#0284c7",
+      "heightRatio": 1.6
+    }
+  },
+  {
+    "id": "lv-falcon9-dedicated",
+    "name": "SpaceX Falcon 9 (Dedicated)",
+    "provider": "SpaceX",
+    "class": "Medium-Heavy Reusable",
+    "costM": 67.0,
+    "maxPayloadLeoKg": 18400,
+    "maxPayloadSsoKg": 14200,
+    "maxPayloadGtoKg": 5500,
+    "maxPayloadTliKg": 3800,
+    "fairingDiameterM": 5.2,
+    "fairingHeightM": 13.1,
+    "reliabilityRating": 0.99,
+    "description": "Workhorse two-stage launch vehicle with reusable booster. Provides abundant mass margin and fairing volume for complex flagship missions.",
+    "visualModel": {
+      "stages": 2,
+      "color": "#f8fafc",
+      "accentColor": "#0f172a",
+      "heightRatio": 1.6
+    }
+  },
+  {
+    "id": "lv-vulcan-centaur",
+    "name": "ULA Vulcan Centaur",
+    "provider": "United Launch Alliance (ULA)",
+    "class": "Heavy Exploration",
+    "costM": 115.0,
+    "maxPayloadLeoKg": 27200,
+    "maxPayloadSsoKg": 21000,
+    "maxPayloadGtoKg": 14500,
+    "maxPayloadTliKg": 12100,
+    "fairingDiameterM": 5.4,
+    "fairingHeightM": 15.5,
+    "reliabilityRating": 0.98,
+    "description": "High-energy exploration rocket with cryogenic Centaur V upper stage. Superior high-energy C3 performance for direct lunar insertion and Lagrange point injections.",
+    "visualModel": {
+      "stages": 2,
+      "color": "#dc2626",
+      "accentColor": "#ffffff",
+      "heightRatio": 1.8
+    }
+  },
+  {
+    "id": "lv-nasa-sls",
+    "name": "NASA Space Launch System (SLS Block 1)",
+    "provider": "NASA",
+    "class": "Super-Heavy Deep Space",
+    "costM": 1800.0,
+    "maxPayloadLeoKg": 95000,
+    "maxPayloadSsoKg": 75000,
+    "maxPayloadGtoKg": 42000,
+    "maxPayloadTliKg": 27000,
+    "fairingDiameterM": 8.4,
+    "fairingHeightM": 19.1,
+    "reliabilityRating": 0.99,
+    "description": "NASA's premier deep-space exploration launcher. Capable of sending massive robotic flagships or lunar surface landers on direct escape trajectories.",
+    "visualModel": {
+      "stages": 2,
+      "color": "#ea580c",
+      "accentColor": "#ffffff",
+      "heightRatio": 2.2
+    }
+  }
+]

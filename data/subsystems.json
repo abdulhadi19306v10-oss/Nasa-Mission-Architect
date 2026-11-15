@@ -1,0 +1,347 @@
+{
+  "structures": [
+    {
+      "id": "bus-cubesat-12u",
+      "name": "12U Deep-Space CubeSat Bus",
+      "category": "Structure",
+      "dryMassKg": 8.5,
+      "maxPayloadMassKg": 16.0,
+      "costM": 2.2,
+      "dimensions": [0.22, 0.22, 0.36],
+      "shape": "box",
+      "description": "Standardized aluminum anodized 12U CubeSat chassis with integrated solar cell mounts, internal card cages, and deployer tabs.",
+      "visualModel": {
+        "width": 0.5,
+        "height": 0.9,
+        "depth": 0.5,
+        "material": "anodized_aluminum"
+      }
+    },
+    {
+      "id": "bus-espa-smallsat",
+      "name": "ESPA-Class SmallSat Modular Bus",
+      "category": "Structure",
+      "dryMassKg": 65.0,
+      "maxPayloadMassKg": 180.0,
+      "costM": 8.5,
+      "dimensions": [0.8, 0.8, 0.9],
+      "shape": "octagonal",
+      "description": "EELV Secondary Payload Adapter (ESPA) standard satellite platform with carbon-composite panels and multi-payload mounting decks.",
+      "visualModel": {
+        "width": 1.1,
+        "height": 1.4,
+        "depth": 1.1,
+        "material": "gold_mli"
+      }
+    },
+    {
+      "id": "bus-flagship-hex",
+      "name": "Heavy Flagship Observatory Platform",
+      "category": "Structure",
+      "dryMassKg": 320.0,
+      "maxPayloadMassKg": 850.0,
+      "costM": 32.0,
+      "dimensions": [1.6, 1.6, 2.2],
+      "shape": "hexagonal",
+      "description": "Rigid beryllium-aluminum truss structure engineered for high thermal stability, heavy instruments, and multi-year deep space voyages.",
+      "visualModel": {
+        "width": 1.8,
+        "height": 2.4,
+        "depth": 1.8,
+        "material": "silver_mli"
+      }
+    }
+  ],
+  "powerGeneration": [
+    {
+      "id": "pwr-body-panels",
+      "name": "Body-Mounted Triple-Junction PV",
+      "category": "Power Generation",
+      "massKg": 3.0,
+      "powerOutputWatts": 45,
+      "costM": 0.8,
+      "description": "High-efficiency GaInP/GaAs cells bonded directly to outer chassis panels. No deployment mechanism or moving parts.",
+      "efficiency": 0.295,
+      "sunTracking": false,
+      "visualModel": {
+        "type": "body_surface",
+        "cellColor": "#0c1445"
+      }
+    },
+    {
+      "id": "pwr-deployable-fixed",
+      "name": "Deployable Dual-Wing Solar Panels",
+      "category": "Power Generation",
+      "massKg": 14.0,
+      "powerOutputWatts": 190,
+      "costM": 2.8,
+      "description": "Spring-hinged deployable wings with silicon solar cell substrates. Fixed orientation relative to spacecraft frame.",
+      "efficiency": 0.31,
+      "sunTracking": false,
+      "visualModel": {
+        "type": "dual_wings",
+        "span": 2.2,
+        "width": 0.6,
+        "cellColor": "#0a194f"
+      }
+    },
+    {
+      "id": "pwr-articulated-tracking",
+      "name": "Articulated Sun-Tracking Solar Arrays",
+      "category": "Power Generation",
+      "massKg": 32.0,
+      "powerOutputWatts": 550,
+      "costM": 7.5,
+      "description": "Motorized dual-axis solar array drive assembly (SADA) that continuously tracks maximum solar incidence angle.",
+      "efficiency": 0.32,
+      "sunTracking": true,
+      "visualModel": {
+        "type": "tracking_wings",
+        "span": 3.8,
+        "width": 0.9,
+        "cellColor": "#06133b"
+      }
+    },
+    {
+      "id": "pwr-deepspace-rtg",
+      "name": "Next-Gen Radioisotope Generator (RTG)",
+      "category": "Power Generation",
+      "massKg": 44.0,
+      "powerOutputWatts": 120,
+      "costM": 45.0,
+      "description": "Continuous Pu-238 decay thermoelectric generator. Immune to orbital eclipses and solar distance, but heavy and costly.",
+      "efficiency": 0.08,
+      "sunTracking": false,
+      "visualModel": {
+        "type": "rtg_cylinder",
+        "fins": 8,
+        "radius": 0.35,
+        "height": 0.8,
+        "color": "#334155"
+      }
+    },
+    {
+      "id": "pwr-mega-outer-solar",
+      "name": "Clipper Outer-Solar Mega Arrays",
+      "category": "Power Generation",
+      "massKg": 68.0,
+      "powerOutputWatts": 3600,
+      "costM": 28.0,
+      "description": "Immense Jupiter-grade solar blankets (3,600W at 1 AU) engineered to harvest faint 3.7% sunlight at Europa (~133W) and Mars/Psyche.",
+      "efficiency": 0.33,
+      "sunTracking": true,
+      "visualModel": {
+        "type": "mega_wings",
+        "span": 5.2,
+        "width": 1.15,
+        "cellColor": "#06133b"
+      }
+    },
+    {
+      "id": "pwr-multi-rtg",
+      "name": "Quad-MMRTG Nuclear Cluster (4x Pu-238)",
+      "category": "Power Generation",
+      "massKg": 115.0,
+      "powerOutputWatts": 650,
+      "costM": 125.0,
+      "description": "Four Plutonium-238 isotope generators delivering 650W continuously anywhere from Mercury to Saturn—even powering SAR radar through 9.5 AU Titan clouds.",
+      "efficiency": 0.09,
+      "sunTracking": false,
+      "visualModel": {
+        "type": "multi_rtg_cluster",
+        "fins": 8,
+        "radius": 0.35,
+        "height": 0.9,
+        "color": "#334155"
+      }
+    }
+  ],
+  "energyStorage": [
+    {
+      "id": "bat-compact-150wh",
+      "name": "Space-Grade Li-ion Pack (150 Wh)",
+      "category": "Energy Storage",
+      "massKg": 2.2,
+      "capacityWh": 150,
+      "maxDoD": 0.65,
+      "costM": 0.6,
+      "description": "Compact battery pack with integrated cell-balancing circuitry and thermal heater blankets."
+    },
+    {
+      "id": "bat-medium-600wh",
+      "name": "Modular High-Reliability Li-ion (600 Wh)",
+      "category": "Energy Storage",
+      "massKg": 6.8,
+      "capacityWh": 600,
+      "maxDoD": 0.70,
+      "costM": 1.9,
+      "description": "Dual-string battery assembly with redundant charge controllers for medium SmallSat mission profiles."
+    },
+    {
+      "id": "bat-heavy-1800wh",
+      "name": "Heavy-Duty Deep-Cycle Battery (1800 Wh)",
+      "category": "Energy Storage",
+      "massKg": 18.5,
+      "capacityWh": 1800,
+      "maxDoD": 0.75,
+      "costM": 4.8,
+      "description": "High-capacity battery matrix capable of sustaining high-power radars or telescopes through 45-minute planetary eclipses."
+    }
+  ],
+  "adcs": [
+    {
+      "id": "adcs-magnetorquers",
+      "name": "Magnetic Torquer Coils + Sun Sensor",
+      "category": "ADCS",
+      "massKg": 3.5,
+      "powerWatts": 8,
+      "pointingAccuracyDeg": 4.5,
+      "costM": 0.9,
+      "description": "Interacts with Earth's geomagnetic field to dump momentum and steer. Low cost and robust, but ineffective beyond LEO.",
+      "requiresMagneticField": true
+    },
+    {
+      "id": "adcs-reaction-wheels",
+      "name": "3-Axis Reaction Wheels + Horizon Sensor",
+      "category": "ADCS",
+      "massKg": 9.5,
+      "powerWatts": 25,
+      "pointingAccuracyDeg": 0.04,
+      "costM": 3.6,
+      "description": "Flywheel momentum exchange system providing smooth, three-axis orientation for imaging satellites.",
+      "requiresMagneticField": false
+    },
+    {
+      "id": "adcs-star-tracker-precision",
+      "name": "Dual Star Trackers + Micro-Reaction Wheels",
+      "category": "ADCS",
+      "massKg": 16.0,
+      "powerWatts": 42,
+      "pointingAccuracyDeg": 0.002,
+      "costM": 11.0,
+      "description": "Sub-arcsecond celestial pointing system matching star patterns against deep-sky catalogs. Crucial for astronomy and laser comms.",
+      "requiresMagneticField": false
+    }
+  ],
+  "communications": [
+    {
+      "id": "comm-sband-patch",
+      "name": "S-Band Omni Patch Antenna",
+      "category": "Communications",
+      "massKg": 1.2,
+      "powerWatts": 12,
+      "downlinkRateMbps": 0.5,
+      "costM": 0.7,
+      "pointingToleranceDeg": 60.0,
+      "description": "Near-omnidirectional coverage for robust command uplink and housekeeping telemetry. Low throughput.",
+      "visualModel": {
+        "type": "patch_plate",
+        "size": 0.15,
+        "color": "#e2e8f0"
+      }
+    },
+    {
+      "id": "comm-xband-horn",
+      "name": "X-Band Medium-Gain Horn & Transmitter",
+      "category": "Communications",
+      "massKg": 4.5,
+      "powerWatts": 35,
+      "downlinkRateMbps": 25.0,
+      "costM": 3.2,
+      "pointingToleranceDeg": 8.0,
+      "description": "Standard NASA Near Space Network (NSN) link for returning medium science data volumes during ground station passes.",
+      "visualModel": {
+        "type": "horn_antenna",
+        "length": 0.3,
+        "flare": 0.2,
+        "color": "#cbd5e1"
+      }
+    },
+    {
+      "id": "comm-kaband-dish",
+      "name": "Ka-Band Steerable High-Gain Parabolic Dish",
+      "category": "Communications",
+      "massKg": 14.5,
+      "powerWatts": 85,
+      "downlinkRateMbps": 200.0,
+      "costM": 9.5,
+      "pointingToleranceDeg": 0.5,
+      "description": "Gimballed 0.8m parabolic reflector capable of high-throughput science data dumps to NASA DSN / Ground Network.",
+      "visualModel": {
+        "type": "dish_gimbal",
+        "diameter": 0.8,
+        "depth": 0.22,
+        "color": "#f8fafc"
+      }
+    },
+    {
+      "id": "comm-optical-laser",
+      "name": "Deep Space Optical Laser Transceiver (OCTL)",
+      "category": "Communications",
+      "massKg": 22.0,
+      "powerWatts": 110,
+      "downlinkRateMbps": 1000.0,
+      "costM": 24.0,
+      "pointingToleranceDeg": 0.005,
+      "description": "Infrared laser downlink delivering gigabit bandwidth. Demands ultra-precise ADCS pointing to hit optical ground stations.",
+      "visualModel": {
+        "type": "laser_terminal",
+        "aperture": 0.25,
+        "length": 0.5,
+        "color": "#64748b"
+      }
+    }
+  ],
+  "obc": [
+    {
+      "id": "obc-standard-radtol",
+      "name": "Radiation-Tolerant Dual ARM Flight Computer",
+      "category": "OBC",
+      "massKg": 1.4,
+      "powerWatts": 6,
+      "storageGb": 64,
+      "costM": 1.2,
+      "description": "Proven flight heritage computer with error-correcting RAM and hardware watchdog."
+    },
+    {
+      "id": "obc-radhard-fpga",
+      "name": "Radiation-Hardened Quad-Core + FPGA System",
+      "category": "OBC",
+      "massKg": 3.2,
+      "powerWatts": 18,
+      "storageGb": 512,
+      "costM": 4.5,
+      "description": "Heavy rad-hard processor capable of surviving Van Allen radiation belts and deep space cosmic rays."
+    },
+    {
+      "id": "obc-edge-ai-payload",
+      "name": "Neuromorphic Edge AI Payload Coprocessor",
+      "category": "OBC",
+      "massKg": 4.0,
+      "powerWatts": 32,
+      "storageGb": 2048,
+      "costM": 8.0,
+      "description": "Onboard machine learning processor that filters cloudy Earth images or flags exoplanet transit anomalies in real time, saving 60% downlink bandwidth."
+    }
+  ],
+  "thermal": [
+    {
+      "id": "thm-passive-mli",
+      "name": "Passive Multi-Layer Insulation (MLI) & Radiators",
+      "category": "Thermal",
+      "massKg": 3.0,
+      "powerWatts": 0,
+      "costM": 0.5,
+      "description": "Aluminized Mylar thermal blankets and optical solar reflectors for passive temperature regulation."
+    },
+    {
+      "id": "thm-active-heaters-louvers",
+      "name": "Active Thermal Louvers + Heaters",
+      "category": "Thermal",
+      "massKg": 8.5,
+      "powerWatts": 20,
+      "costM": 2.4,
+      "description": "Thermostatically controlled bimetallic louvers and strip heaters ensuring narrow thermal ranges for cryogenic or optical instruments."
+    }
+  ]
+}

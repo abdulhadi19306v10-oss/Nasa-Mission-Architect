@@ -1,0 +1,152 @@
+[
+  {
+    "id": "nasa-landsat9",
+    "name": "Landsat 9",
+    "agency": "NASA / USGS",
+    "launchYear": 2021,
+    "orbit": "Sun-Synchronous Orbit (705 km, 98.2°)",
+    "primaryInstruments": ["OLI-2 (Operational Land Imager)", "TIRS-2 (Thermal Infrared Sensor)"],
+    "missionCostM": 880,
+    "keyLesson": "Sun-synchronous orbits guarantee identical sun angle and shadows for every repeat pass, making long-term environmental change detection accurate.",
+    "similarityProfile": {
+      "targetDomain": "earth-obs",
+      "preferredOrbit": "orbit-sso-700",
+      "instruments": ["inst-multispectral", "inst-hyperspectral"]
+    }
+  },
+  {
+    "id": "nasa-kepler",
+    "name": "Kepler Space Telescope",
+    "agency": "NASA Ames",
+    "launchYear": 2009,
+    "orbit": "Earth-trailing Heliocentric / L2 equivalent",
+    "primaryInstruments": ["0.95m Schmidt Photometer with 42 CCD array"],
+    "missionCostM": 600,
+    "keyLesson": "Exoplanet transit detection requires extreme pointing stability (reaction wheels) and thermal control so instrument noise doesn't drown out tiny starlight dips.",
+    "similarityProfile": {
+      "targetDomain": "astronomy",
+      "preferredOrbit": "orbit-lagrange-l2",
+      "instruments": ["inst-space-telescope"]
+    }
+  },
+  {
+    "id": "nasa-lro",
+    "name": "Lunar Reconnaissance Orbiter (LRO)",
+    "agency": "NASA Goddard",
+    "launchYear": 2009,
+    "orbit": "Low Lunar Polar Orbit (50 km)",
+    "primaryInstruments": ["LOLA (Laser Altimeter)", "LEND (Neutron Detector)", "LROC (Cameras)"],
+    "missionCostM": 504,
+    "keyLesson": "Low lunar orbits face intense gravitational anomalies (mascons) and communication occultation during far-side passes, requiring autonomous onboard scheduling.",
+    "similarityProfile": {
+      "targetDomain": "lunar-science",
+      "preferredOrbit": "orbit-lunar-polar-100",
+      "instruments": ["inst-lunar-lidar", "inst-neutron-spectrometer"]
+    }
+  },
+  {
+    "id": "nasa-pace",
+    "name": "PACE (Plankton, Aerosol, Cloud, ocean Ecosystem)",
+    "agency": "NASA Goddard",
+    "launchYear": 2024,
+    "orbit": "Sun-Synchronous Orbit (676.5 km, 98°)",
+    "primaryInstruments": ["OCI (Ocean Color Instrument)", "HARP2 (Polarimeter)"],
+    "missionCostM": 964,
+    "keyLesson": "Hyperspectral imaging produces immense raw data rates, requiring high-bandwidth Ka-band downlinks and prioritized onboard data compression.",
+    "similarityProfile": {
+      "targetDomain": "earth-obs",
+      "preferredOrbit": "orbit-sso-700",
+      "instruments": ["inst-hyperspectral", "inst-radiometer"]
+    }
+  },
+  {
+    "id": "nasa-mro",
+    "name": "Mars Reconnaissance Orbiter (MRO)",
+    "agency": "NASA JPL",
+    "launchYear": 2005,
+    "orbit": "Mars Near-Polar Science Orbit (255 × 320 km, 92.6°)",
+    "primaryInstruments": ["HiRISE (0.5m Camera)", "CRISM (Hyperspectral Spectrometer)", "MCS (Climate Radiometer)", "SHARAD (Radar)"],
+    "missionCostM": 720,
+    "keyLesson": "At 1.52 AU, solar flux drops to 43% of Earth nominal; twin 20 m² sun-tracking solar wings paired with a 3.0 m Ka/X-band parabolic dish enable gigabit Martian science return via the DSN.",
+    "similarityProfile": {
+      "targetDomain": "mars-science",
+      "preferredOrbit": "orbit-mars-science-380",
+      "instruments": ["inst-hyperspectral", "inst-radiometer", "inst-multispectral"]
+    }
+  },
+  {
+    "id": "nasa-magellan",
+    "name": "Magellan Venus Radar Mapper",
+    "agency": "NASA JPL",
+    "launchYear": 1989,
+    "orbit": "Venus Polar Elliptical / Cloud-Top Orbit (~300 km, 85.5°)",
+    "primaryInstruments": ["S-Band Synthetic Aperture Radar (SAR)", "Altimeter & Thermal Radiometer"],
+    "missionCostM": 680,
+    "keyLesson": "Opaque sulfuric acid clouds block visible light at Venus, making Synthetic Aperture Radar (SAR) essential, while 191% solar flux demands active thermal management.",
+    "similarityProfile": {
+      "targetDomain": "venus-science",
+      "preferredOrbit": "orbit-venus-cloud-300",
+      "instruments": ["inst-sar-radar", "inst-radiometer"]
+    }
+  },
+  {
+    "id": "nasa-europa-clipper",
+    "name": "Europa Clipper",
+    "agency": "NASA JPL / Johns Hopkins APL",
+    "launchYear": 2024,
+    "orbit": "Jovian / Europa Science Orbit (200 km belts)",
+    "primaryInstruments": ["EC-MAG / ICEMAG (Boom Magnetometer)", "EIS (Optical Cameras)", "MISE (Spectrometer)", "REASON (Ice Radar)"],
+    "missionCostM": 5200,
+    "keyLesson": "Inside Jupiter's fierce synchrotron radiation belts at 5.2 AU (3.7% sunlight), a titanium-aluminum radiation vault, rad-hard flight computers, and massive 102 m² solar wings keep electronics alive.",
+    "similarityProfile": {
+      "targetDomain": "icy-moons",
+      "preferredOrbit": "orbit-europa-polar-200",
+      "instruments": ["inst-magnetometer-boom", "inst-multispectral"]
+    }
+  },
+  {
+    "id": "nasa-cassini",
+    "name": "Cassini–Huygens Saturn/Titan Orbiter",
+    "agency": "NASA JPL / ESA / ASI",
+    "launchYear": 1997,
+    "orbit": "Titan Flyby & Hydrocarbon Sea Mapping Orbit (1,200 km)",
+    "primaryInstruments": ["Cassini RADAR (Ku-Band SAR)", "VIMS & CIRS Spectrometers", "MAG (Boom Magnetometer)"],
+    "missionCostM": 3900,
+    "keyLesson": "At 9.5 AU around Saturn and Titan, sunlight is just 1.1% of Earth's—rendering solar panels unviable and making Plutonium-238 Radioisotope Thermoelectric Generators (RTGs) mandatory.",
+    "similarityProfile": {
+      "targetDomain": "titan-science",
+      "preferredOrbit": "orbit-titan-haze-1200",
+      "instruments": ["inst-sar-radar", "inst-magnetometer-boom"]
+    }
+  },
+  {
+    "id": "nasa-psyche",
+    "name": "Psyche Asteroid Orbiter",
+    "agency": "NASA JPL / Arizona State",
+    "launchYear": 2023,
+    "orbit": "16 Psyche Metallic Asteroid Polar Orbit (120 km)",
+    "primaryInstruments": ["Fluxgate Magnetometers (2m Boom)", "Multispectral Imager", "GRNS (Gamma-Ray & Neutron Spectrometer)", "DSOC (Deep Space Optical Laser)"],
+    "missionCostM": 1200,
+    "keyLesson": "Surveying the exposed metal protoplanet core 16 Psyche pairs Magnetometer Booms and Neutron Spectroscopy with NASA's groundbreaking Deep Space Optical Communications (DSOC) laser link.",
+    "similarityProfile": {
+      "targetDomain": "core-geology",
+      "preferredOrbit": "orbit-psyche-metal-120",
+      "instruments": ["inst-magnetometer-boom", "inst-multispectral", "inst-neutron-spectrometer"]
+    }
+  },
+  {
+    "id": "nasa-jwst",
+    "name": "James Webb Space Telescope (JWST)",
+    "agency": "NASA Goddard / ESA / CSA",
+    "launchYear": 2021,
+    "orbit": "Sun-Earth Lagrange Point 2 (L2 Halo, 1.5M km)",
+    "primaryInstruments": ["NIRCam / NIRSpec / MIRI (6.5m Cryogenic Optical-IR Telescope)", "Fine Guidance Sensor (FGS)"],
+    "missionCostM": 10000,
+    "keyLesson": "Positioned at Sun-Earth L2 to eliminate Earth eclipses and infrared glare, JWST achieves milliarcsecond pointing stability and cryogenic optics via precision star trackers and active thermal isolation.",
+    "similarityProfile": {
+      "targetDomain": "astronomy",
+      "preferredOrbit": "orbit-lagrange-l2",
+      "instruments": ["inst-space-telescope"]
+    }
+  }
+]

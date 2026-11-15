@@ -1,0 +1,180 @@
+[
+  {
+    "id": "scenario-earth-watch",
+    "title": "Earth Watch: Climate Sentinel",
+    "tagline": "Design an Earth observation satellite to monitor deforestation, wildfires, and ocean health.",
+    "difficulty": "Beginner",
+    "briefing": "Global climate monitoring programs urgently require high-resolution multispectral and atmospheric data. Your mission is to design, launch, and operate an Earth-observing satellite in Sun-Synchronous Orbit that delivers continuous environmental imagery within a strict $120M budget envelope.",
+    "budgetM": 120.0,
+    "targetLifetimeYears": 3.0,
+    "targetOrbits": ["orbit-sso-700", "orbit-leo-400"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["earth-obs", "climate"],
+      "minDataRateDailyGb": 150,
+      "maxMassMarginPercent": 20.0
+    },
+    "scoringBonusInstruments": ["inst-multispectral", "inst-hyperspectral", "inst-radiometer"],
+    "badge": "EARTH_OBSERVER"
+  },
+  {
+    "id": "scenario-eye-universe",
+    "title": "Eye on the Universe: Exoplanet Hunter",
+    "tagline": "Architect a deep space observatory to detect atmospheric chemical signatures on habitable-zone exoplanets.",
+    "difficulty": "Intermediate",
+    "briefing": "NASA's Astrophysics Division has issued an Announcement of Opportunity (AO) for a space observatory positioned at Sun-Earth L2. The payload requires arcsecond pointing stability, extreme thermal isolation, and gigabit-per-day data downlink through the Deep Space Network.",
+    "budgetM": 260.0,
+    "targetLifetimeYears": 5.0,
+    "targetOrbits": ["orbit-lagrange-l2"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["astronomy", "exoplanets"],
+      "minDataRateDailyGb": 80,
+      "maxPointingErrorDeg": 0.005
+    },
+    "scoringBonusInstruments": ["inst-space-telescope"],
+    "badge": "COSMIC_DISCOVERER"
+  },
+  {
+    "id": "scenario-moon-scout",
+    "title": "Moon Scout: Artemis Water Ice Prospector",
+    "tagline": "Map water-ice deposits inside permanently shadowed craters at the lunar south pole.",
+    "difficulty": "Advanced",
+    "briefing": "Future Artemis crewed surface bases require in-situ water resources. Build a lunar scout orbiter capable of enduring polar night passes, surviving the cislunar radiation environment, and penetrating shadowed crater floors with LIDAR and neutron spectroscopy.",
+    "budgetM": 190.0,
+    "targetLifetimeYears": 2.0,
+    "targetOrbits": ["orbit-lunar-polar-100"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["lunar-science", "water-ice"],
+      "minDataRateDailyGb": 40,
+      "radiationHardened": true
+    },
+    "scoringBonusInstruments": ["inst-lunar-lidar", "inst-neutron-spectrometer"],
+    "badge": "LUNAR_PIONEER"
+  },
+  {
+    "id": "scenario-geo-storm",
+    "title": "StormWatch GEO: Hurricane Eye",
+    "tagline": "Place a continuous geostationary weather sentinel 35,786 km above tropical storm basins.",
+    "difficulty": "Intermediate",
+    "briefing": "Design a Geostationary weather satellite able to reach high-energy GTO/GEO orbit inside the outer Van Allen radiation belts while continuously streaming microwave storm soundings and optical cloud loops.",
+    "budgetM": 185.0,
+    "targetLifetimeYears": 5.0,
+    "targetOrbits": ["orbit-geo-35786"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["weather", "earth-obs", "climate"],
+      "minDataRateDailyGb": 120,
+      "radiationHardened": true
+    },
+    "scoringBonusInstruments": ["inst-radiometer", "inst-multispectral"],
+    "badge": "GEO_SENTINEL"
+  },
+  {
+    "id": "scenario-venus-radar",
+    "title": "Magellan Redux: Venus Cloud-Piercer",
+    "tagline": "Deploy Synthetic Aperture Radar to map volcanoes beneath Venus's opaque sulfuric clouds.",
+    "difficulty": "Advanced",
+    "briefing": "Orbiting at 0.72 AU bathes solar arrays in 191% sunlight while thick clouds block visible cameras. Pair active SAR radar with precision attitude wheels and active thermal louvers.",
+    "budgetM": 240.0,
+    "targetLifetimeYears": 2.0,
+    "targetOrbits": ["orbit-venus-cloud-300"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["geology", "earth-obs", "atmosphere"],
+      "minDataRateDailyGb": 100
+    },
+    "scoringBonusInstruments": ["inst-sar-radar", "inst-radiometer"],
+    "badge": "VENUS_MAPPER"
+  },
+  {
+    "id": "scenario-mars-recon",
+    "title": "Ares Recon: Jezero Mineral Surveyor",
+    "tagline": "Survey ancient Martian river deltas and dust storms at 1.52 AU where solar flux halves.",
+    "difficulty": "Advanced",
+    "briefing": "At Mars (43% Earth sunlight), small panels starve heavy optics. Combine outer-solar Mega Arrays or RTGs with hyperspectral geology sensors and high-gain Ka-band DSN links.",
+    "budgetM": 275.0,
+    "targetLifetimeYears": 3.0,
+    "targetOrbits": ["orbit-mars-science-380"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["atmosphere", "climate", "earth-obs"],
+      "minDataRateDailyGb": 80
+    },
+    "scoringBonusInstruments": ["inst-multispectral", "inst-hyperspectral", "inst-radiometer"],
+    "badge": "MARS_SURVEYOR"
+  },
+  {
+    "id": "scenario-psyche-core",
+    "title": "Psyche DSOC: Metal Core Rendezvous",
+    "tagline": "Explore metallic protoplanet core 16 Psyche at 2.9 AU while pioneering deep-space optical lasers.",
+    "difficulty": "Advanced",
+    "briefing": "Voyage to the Main Asteroid Belt (12% solar flux) with a deployable Magnetometer Boom, Neutron Spectrometer, and Star Tracker-guided Deep Space Optical Laser Communications.",
+    "budgetM": 285.0,
+    "targetLifetimeYears": 4.0,
+    "targetOrbits": ["orbit-psyche-metal-120"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["heliophysics", "resources", "earth-obs"],
+      "minDataRateDailyGb": 40,
+      "radiationHardened": true
+    },
+    "scoringBonusInstruments": ["inst-magnetometer-boom", "inst-neutron-spectrometer", "inst-multispectral"],
+    "badge": "CORE_EXPLORER"
+  },
+  {
+    "id": "scenario-europa-ocean",
+    "title": "Jovian Clipper: Europa Ocean Scout",
+    "tagline": "Endure intense Jovian radiation at 5.2 AU to sample subsurface saltwater ocean clues.",
+    "difficulty": "Advanced",
+    "briefing": "At Jupiter's icy moon Europa, sunlight drops to 3.7% and radiation belts fry unshielded electronics. Equip Clipper Mega Arrays or Pu-238 RTGs, Rad-Hard FPGA avionics, and magnetic/optical ocean-plume sensors.",
+    "budgetM": 340.0,
+    "targetLifetimeYears": 5.0,
+    "targetOrbits": ["orbit-europa-polar-200"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["magnetosphere", "earth-obs"],
+      "minDataRateDailyGb": 25,
+      "radiationHardened": true
+    },
+    "scoringBonusInstruments": ["inst-magnetometer-boom", "inst-multispectral"],
+    "badge": "EUROPA_CLIPPER"
+  },
+  {
+    "id": "scenario-titan-flagship",
+    "title": "Cassini Legacy: Titan Sea Explorer",
+    "tagline": "Command a nuclear Pu-238 flagship through Saturn's hazy golden moon at 9.5 AU.",
+    "difficulty": "Advanced",
+    "briefing": "At 9.5 AU around Titan, sunlight plunges to 1.1%, rendering solar panels useless. Power a Flagship SAR Radar and Magnetometer Boom continuously with Quad-MMRTG Plutonium-238 batteries.",
+    "budgetM": 420.0,
+    "targetLifetimeYears": 6.0,
+    "targetOrbits": ["orbit-titan-haze-1200"],
+    "requiredCapabilities": {
+      "targetScienceDomains": ["geology", "magnetosphere"],
+      "minDataRateDailyGb": 30,
+      "radiationHardened": true
+    },
+    "scoringBonusInstruments": ["inst-sar-radar", "inst-magnetometer-boom"],
+    "badge": "TITAN_VOYAGER"
+  },
+  {
+    "id": "scenario-sandbox",
+    "title": "NASA Deep-Space Free Flight (∞ Budget)",
+    "tagline": "Unlimited-budget sandbox to explore any planet, moon, asteroid, or flagship NASA architecture.",
+    "difficulty": "Sandbox",
+    "briefing": "Design with infinite (∞) mission funding across Earth, Mars, Venus, Moon, Europa, Titan, 16 Psyche, and Sun-Earth L2. Equip exact NASA flagship hardware combinations, Pu-238 RTGs, optical lasers, and super-heavy SLS launchers.",
+    "budgetM": -1,
+    "targetLifetimeYears": 10.0,
+    "targetOrbits": [
+      "orbit-leo-400",
+      "orbit-sso-700",
+      "orbit-geo-35786",
+      "orbit-lunar-polar-100",
+      "orbit-lagrange-l2",
+      "orbit-mars-science-380",
+      "orbit-venus-cloud-300",
+      "orbit-europa-polar-200",
+      "orbit-titan-haze-1200",
+      "orbit-psyche-metal-120"
+    ],
+    "requiredCapabilities": {
+      "targetScienceDomains": [],
+      "minDataRateDailyGb": 10
+    },
+    "scoringBonusInstruments": [],
+    "badge": "CHIEF_ARCHITECT"
+  }
+]

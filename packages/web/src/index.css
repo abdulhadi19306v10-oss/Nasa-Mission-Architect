@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Chakra Petch', 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: #030914;
+    color: #f8fafc;
+  }
+
+  h1,
+  h2,
+  h3,
+  .hud-heading {
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 0.08em;
+  }
+
+  code,
+  pre,
+  .telemetry-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom NASA Flight Control Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(5, 11, 24, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 91, 216, 0.55);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fc3d21;
+}
+
+/* Live Surface Overrides (Ensures NASA Navy/Slate theme works even without restarting Vite dev) */
+.bg-space-950 {
+  background-color: #040914;
+}
+
+.bg-space-900 {
+  background-color: #091428;
+}
+
+.bg-space-850 {
+  background-color: #0f1f3d;
+}
+
+/* -----------------------------------------------------------
+   NASA MISSION CONTROL HUD GEOMETRY
+   ----------------------------------------------------------- */
+.game-frame {
+  position: relative;
+  background: linear-gradient(165deg, rgba(8, 18, 38, 0.92) 0%, rgba(4, 9, 20, 0.96) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-top: 2px solid rgba(16, 91, 216, 0.85);
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 14px 36px rgba(0, 0, 0, 0.68);
+  backdrop-filter: blur(12px);
+}
+
+.game-frame-amber {
+  position: relative;
+  background: linear-gradient(160deg, rgba(28, 16, 6, 0.95) 0%, rgba(14, 9, 4, 0.97) 100%);
+  border: 1px solid rgba(251, 191, 36, 0.65);
+  border-top: 2px solid #fc3d21;
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.game-chip {
+  clip-path: polygon(
+    6px 0%,
+    100% 0%,
+    100% calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    0% 100%,
+    0% 6px
+  );
+}
+
+.game-blade {
+  clip-path: polygon(14px 0%, 100% 0%, calc(100% - 14px) 100%, 0% 100%);
+}
+
+/* Official NASA Mission Crest Stamp */
+.nasa-crest {
+  background: linear-gradient(135deg, #0b3d91 0%, #105bd8 100%);
+  border: 1px solid rgba(226, 232, 240, 0.5);
+  border-bottom: 3px solid #fc3d21;
+  clip-path: polygon(
+    6px 0%,
+    100% 0%,
+    100% calc(100% - 6px),
+    calc(100% - 6px) 100%,
+    0% 100%,
+    0% 6px
+  );
+}
+
+/* Clean Aerospace Workbench Card */
+.nasa-card {
+  background: linear-gradient(180deg, rgba(12, 24, 48, 0.92) 0%, rgba(7, 14, 30, 0.96) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.nasa-card:hover {
+  border-color: rgba(56, 189, 248, 0.65);
+  transform: translateY(-2px);
+}
+
+.nasa-card-active {
+  background: linear-gradient(180deg, rgba(11, 61, 145, 0.62) 0%, rgba(8, 22, 52, 0.96) 100%);
+  border: 1px solid #38bdf8;
+  border-top: 3px solid #fc3d21;
+  box-shadow: 0 8px 24px rgba(11, 61, 145, 0.45);
+}
+
+.nasa-btn-launch {
+  background: linear-gradient(90deg, #fc3d21 0%, #ea580c 45%, #f59e0b 100%);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 8px 28px rgba(252, 61, 33, 0.4);
+}
+
+.nasa-btn-primary {
+  background: linear-gradient(90deg, #0b3d91 0%, #105bd8 100%);
+  border-left: 4px solid #fc3d21;
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(11, 61, 145, 0.45);
+}
+
+.nasa-chevron-bar {
+  height: 3px;
+  background: linear-gradient(90deg, #fc3d21 0%, #fc3d21 30%, #f8fafc 30%, #f8fafc 55%, #0b3d91 55%, #105bd8 100%);
+}
+
+.hud-panel {
+  background: linear-gradient(155deg, rgba(9, 20, 42, 0.94) 0%, rgba(4, 9, 20, 0.97) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  border-top: 2px solid rgba(16, 91, 216, 0.7);
+  clip-path: polygon(
+    10px 0%,
+    100% 0%,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0% 100%,
+    0% 10px
+  );
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+}
+
+.hud-panel:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.hud-grid-bg {
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.scanline-overlay {
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.16) 50%),
+    linear-gradient(90deg, rgba(252, 61, 33, 0.015), rgba(255, 255, 255, 0.01), rgba(11, 61, 145, 0.02));
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+.hud-glow-text {
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.42);
+}
